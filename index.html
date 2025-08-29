@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>DevOps Lifecycle Diagram</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 30px;
+    }
+
+    h1 {
+      color: #333;
+    }
+
+    .diagram {
+      position: relative;
+      width: 600px;
+      height: 600px;
+      border-radius: 50%;
+      margin-top: 40px;
+    }
+
+    .stage {
+      position: absolute;
+      width: 120px;
+      height: 60px;
+      background-color: #4CAF50;
+      color: white;
+      text-align: center;
+      line-height: 60px;
+      border-radius: 8px;
+      font-weight: bold;
+      box-shadow: 0 0 8px rgba(0,0,0,0.1);
+    }
+
+    /* Position each stage using polar coordinates */
+    .stage:nth-child(1) { top: 0%; left: 240px; }      /* Plan */
+    .stage:nth-child(2) { top: 80px; left: 410px; }    /* Develop */
+    .stage:nth-child(3) { top: 190px; left: 480px; }   /* Build */
+    .stage:nth-child(4) { top: 310px; left: 440px; }   /* Test */
+    .stage:nth-child(5) { top: 420px; left: 310px; }   /* Release */
+    .stage:nth-child(6) { top: 470px; left: 160px; }   /* Deploy */
+    .stage:nth-child(7) { top: 370px; left: 40px; }    /* Operate */
+    .stage:nth-child(8) { top: 220px; left: 10px; }    /* Monitor */
+
+    .arrow {
+      position: absolute;
+      width: 30px;
+      height: 30px;
+      background: transparent;
+    }
+
+    .circle {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 600px;
+      height: 600px;
+      border-radius: 50%;
+      border: 4px dashed #ccc;
+      z-index: -1;
+    }
+
+  </style>
+</head>
+<body>
+  <h1>DevOps Lifecycle Diagram</h1>
+  <div class="diagram">
+    <div class="circle"></div>
+    <div class="stage">Plan</div>
+    <div class="stage">Develop</div>
+    <div class="stage">Build</div>
+    <div class="stage">Test</div>
+    <div class="stage">Release</div>
+    <div class="stage">Deploy</div>
+    <div class="stage">Operate</div>
+    <div class="stage">Monitor</div>
+  </div>
+</body>
+</html>
